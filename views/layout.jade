@@ -1,7 +1,131 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title Matthew Lewis
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='stylesheets/main.css')
+	| &#x9;
+	body
+		// Header
+		section#header
+			header
+				// span.image.avatar
+				span.image.avatar
+					img(src='images/profile_photo.jpg')
+				h1#logo
+					a(href='#') Matthew Lewis
+				| &#x9;&#x9;&#x9;&#x9;&#x9;
+				p Software Engineer, Technology Enthusiast, Londoner, Sports Fan 
+			| &#x9;&#x9;&#x9;&#x9;
+			nav#nav
+				ul
+					li
+						a.active(href='#one') About Me
+					li
+						a(href='#two') Skills
+					li
+						a(href='#three') Personal Projects
+					li
+						a(href='#four') CV & Contact
+		// Wrapper
+		#wrapper
+			// Main
+			#main
+				// One
+				section#one
+					.container
+						header.major
+							h2 Matthew Lewis
+							p About Me
+								p I absolutely love building things; whether its Lego, 
+									a(href='http://www.ikea.com/') Swedish Flatpack Furniture 
+									| or Enterprise Grade Java Apps.
+								p Enthusiastic but technically lacking 5-a-side footballer. Regular 
+									a(href='https://en.wikipedia.org/wiki/Bouldering') boulderer 
+									| who frequents various climbing gyms around London.
+								p I work for 
+									a(href='https://www.ubs.com/global/en.html') UBS 
+									| writing software and building systems.
+
+
+				// Two
+				section#two
+					.container
+						h3 Things I Can Do
+						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+						p
+							| Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
+						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+						ul.feature-icons
+							li.fa-code Write all the code
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+							li.fa-cubes Stack small boxes
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+							li.fa-book Read books and stuff
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+							li.fa-coffee Drink much coffee
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+							li.fa-bolt Lightning bolt
+							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+							li.fa-users Shadow clone technique
+				// Three
+				section#three
+					.container
+						h3 Personal Projects
+						p Source code can be found on my 
+							a(href='https://github.com/mattylewis/') GitHub 
+						.features
+							article
+								a.image(href='#')
+									img(src='images/park_run_preview.png', alt='')
+								.inner
+									h4 Park Run Android App
+									p
+										| An unofficial application for viewing results and statistics of 
+										a(href='http://www.parkrun.org.uk/') Park Runs.
+									p 
+										| The app includes barcode scanning functionality to allow users to check their times without having to enter their ID number.
+									p
+										i Note that the Park Run app is currently not available on the Google Play Store.
+							article
+								a.image(href='#')
+									img(src='images/playing_card.jpg', alt='')
+								.inner
+									h4 Demolition Whist
+									p A second Android Application, this time using the far more mature Android Studio development environment.
+									p Ambitions are to include a competitive AI implementation and attractive deal animations.  
+									p 
+										i Currently a work in progress.
+							article
+								a.image(href='#')
+									img(src='images/scaleway.jpg', alt='')
+								| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+								.inner
+									h4 This Website!
+									p Created in a few evenings, this site resulted from experimentation with a 
+										a(href='https://www.scaleway.com/') Scaleway C1 ARM Microserver.
+									p Fedora 22 is the underlying OS with 
+										a(href='https://nodejs.org/en/') Node.js v4.0.0 
+										| and 
+										a(href='http://www.lighttpd.net/') lighttpd v1.4 
+										| handling all the web related stuff.
+
+				// Four
+				section#four
+					.container
+						h3 CV & Contact Details
+						p Contact me at matthew 'at' mglewis.co.uk
+						p You can also find my CV on 
+							a(href='https://github.com/mattylewis/cv') GitHub 
+		// Scripts
+		script(src='javascripts/jquery.min.js')
+		| &#x9;&#x9;&#x9;
+		script(src='javascripts/jquery.scrollzer.min.js')
+		| &#x9;&#x9;&#x9;
+		script(src='javascripts/jquery.scrolly.min.js')
+		| &#x9;&#x9;&#x9;
+		script(src='javascripts/skel.min.js')
+		| &#x9;&#x9;&#x9;
+		script(src='javascripts/util.js')
+		| &#x9;&#x9;&#x9;
+		script(src='javascripts/main.js')
