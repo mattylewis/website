@@ -26,7 +26,9 @@ html
 					li
 						a(href='#three') Personal Projects
 					li
-						a(href='#four') CV & Contact
+						a(href='#four') Reading List
+					li
+						a(href='#five') CV & Contact
 		// Wrapper
 		#wrapper
 			// Main
@@ -37,9 +39,9 @@ html
 						header.major
 							h2 Matthew Lewis
 							p About Me
-								p I absolutely love building things; whether its Lego, 
-									a(href='http://www.ikea.com/') Swedish Flatpack Furniture 
-									| or Enterprise Grade Java Apps.
+								p I absolutely love building things; whether its Lego, Software or 
+									a(href='http://www.ikea.com/') Swedish Flatpack Furniture
+									| .
 								p Enthusiastic but technically lacking 5-a-side footballer. Regular 
 									a(href='https://en.wikipedia.org/wiki/Bouldering') boulderer 
 									| who frequents various climbing gyms around London.
@@ -51,29 +53,26 @@ html
 				// Two
 				section#two
 					.container
-						h3 Things I Can Do
-						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-						p
-							| Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
-						| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-						ul.feature-icons
-							li.fa-code Write all the code
-							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-							li.fa-cubes Stack small boxes
-							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-							li.fa-book Read books and stuff
-							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-							li.fa-coffee Drink much coffee
-							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-							li.fa-bolt Lightning bolt
-							| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-							li.fa-users Shadow clone technique
+						h3 Skills
+						h4 Programming Languages
+						ul(class="alt")
+							li Java
+							li Shell, Ant, Other build tools
+							li Experience with C, C#, Python, VBA and JavaScript 
+						h4 Systems and Technologies
+						ul(class="alt")
+							li Linux, Unix
+							li Websphere, Tomcat, Apache, Node.js 
+							li Oracle
+							li Git, SVN, Jenkins, Sontaype Nexus
+
 				// Three
 				section#three
 					.container
 						h3 Personal Projects
 						p Source code can be found on my 
 							a(href='https://github.com/mattylewis/') GitHub 
+							| .
 						.features
 							article
 								a.image(href='#')
@@ -95,14 +94,14 @@ html
 									p A second Android Application, this time using the far more mature Android Studio development environment.
 									p Ambitions are to include a competitive AI implementation and attractive deal animations.  
 									p 
-										i Currently a work in progress.
+										i Watch this space. Currently a work in progress.
 							article
 								a.image(href='#')
 									img(src='images/scaleway.jpg', alt='')
 								| &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
 								.inner
-									h4 This Website!
-									p Created in a few evenings, this site resulted from experimentation with a 
+									h4 This Website
+									p Created in a few evenings, this site is a product of  experimentation with a 
 										a(href='https://www.scaleway.com/') Scaleway C1 ARM Microserver.
 									p Fedora 22 is the underlying OS with 
 										a(href='https://nodejs.org/en/') Node.js v4.0.0 
@@ -113,8 +112,33 @@ html
 				// Four
 				section#four
 					.container
+						h3 Reading List
+						p A collection of recommended books, sites and comics.
+						ul
+							li 
+								a(href='http://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882') Clean Code: A Handbook of Agile Software Craftsmanship 
+								| - Robert Martin
+							li
+								a(href='http://www.amazon.co.uk/Where-Eagles-Dare-Alistair-MacLean/dp/0006158048') Where Eagles Dare 
+								| - Alistair MacLean
+							li 
+								a(href='http://www.amazon.co.uk/Martian-Andy-Weir/dp/0091956145') The Martian 
+								| - Andy Weir
+							li 
+								a(href='http://cube-drone.com/comics/c/relentless-persistence') Cube Drone 
+								| - Curtis Lassam
+							li 
+								a(href='https://what-if.xkcd.com/') XKCD: What if? 
+								| - Randall Munroe
+							li
+								a(href='https://news.ycombinator.com/') Hacker News 
+								| - Y Combinator
+			
+				// Five
+				section#five
+					.container
 						h3 CV & Contact Details
-						p Contact me at matthew 'at' mglewis.co.uk
+						p Drop an email to matthew 'at' mglewis.co.uk
 						p You can also find my CV on 
 							a(href='https://github.com/mattylewis/cv') GitHub 
 		// Scripts
