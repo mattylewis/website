@@ -1,0 +1,5 @@
+nohup.out
+*.log
+*.pid
+.DS_Store
+bin*
